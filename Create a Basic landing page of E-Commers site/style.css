@@ -1,0 +1,569 @@
+/*
+Removes default margin and padding from the body element. 
+Sets the background color to a light gray and uses the "Roboto" font with a fallback to sans-serif.
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 241, 241);
+    font-family: "Roboto",sans-serif;
+
+}
+
+/*
+Sets the navigation bar to use flexbox for layout, evenly spacing its children. The background color is set to orangered, 
+and it has a shadow. The navbar is fixed at the top and spans the full width of the screen.
+*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: orangered;
+    box-shadow: 0px 4px 4px 0px gray;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+/*  Removes underline from links within the ul in the nav,
+adds horizontal margins, sets the text color to black, and the font size to 18px.*/
+nav ul a{
+    text-decoration: none;
+    margin-inline: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+/*Changes link color to white and adds a white bottom border on hover.*/
+nav ul a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/*Styles icons within the ul in the nav, 
+setting font size, color, margins, border, padding, and vertical alignment.*/
+nav ul i{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    padding: 3px 10px;
+    align-items: center;
+}/*
+ Styles buttons in the nav, setting dimensions, background color, font size, border, and rounded corners.
+*/
+nav button{
+    width: 80px;
+    height: 29px;
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Styles input fields in the nav, setting dimensions, font size, border, and rounded corners.*/
+nav input{
+    width: 200px;
+    height: 29px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+
+}
+/*Changes button border, background color, text color, and cursor on hover.*/
+nav button:hover{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+/*Adds top and right margin to ul elements in the nav.*/
+
+nav ul{
+    margin-right: 26px;
+    margin-top: 22px;
+}
+/* Adds left margin to the element with the class logo in the nav.*/
+nav .logo{
+    margin-left: 23px;
+}
+/*Adds top margin and sets the width of the banner to 100%.*/
+.banner{
+    margin-top: 100px;
+    width: 100%;
+}
+/* Uses flexbox for layout in the ul within the banner and hides vertical overflow.*/
+.banner ul{
+    display: flex;
+    overflow-y: hidden;
+}
+
+/*Ensures images in the banner ul have a minimum width of 100%.*/
+.banner  ul img{
+    min-width: 100%;
+}
+
+/*Styles anchor tags in the banner, positioning them absolutely at 50% height,
+ setting z-index, padding, background, color, removing underline, setting font weight and size, 
+and changing cursor to pointer.*/
+.banner a{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    padding: 5vh 1vh;
+    background: transparent;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*Positions the element with class control_next at the far right.*/
+.control_next{
+    right: 0;
+}
+/*Uses flexbox for layout in the main section, evenly spacing children, and adds top margin*/
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 115px;
+}
+/*Adds top margin to the element with class mainText.*/
+.mainText{
+    margin-top: 33px;
+}
+/* Sets the font size for h1 elements within mainText.*/
+.mainText h1{
+    font-size: 58px;
+}
+/*Sets the font size and color for h2 elements within mainText.*/
+.mainText h2{
+    font-size: 44px;
+    color: orangered;
+}
+/*Adds negative right margin to images in the main section.*/
+.main img{
+    margin-right: -115px;
+}
+/*Styles buttons within mainText, setting dimensions, background color, text color, font size, border, and rounded corners.*/
+.mainText button{
+    width: 140px;
+    height: 40px;
+    background-color: orangered;
+    color: aliceblue;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+}
+/* Changes button border, background color, text color, and cursor on hover.*/
+.mainText button:hover{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;    
+}
+/*Centers text, adds top margin, and padding to the element with class head.*/
+.head{
+    text-align: center;
+    margin-top: 45px;
+    padding: 55px;
+}
+/*Sets the text color of span elements within head to orangered.*/
+.head span{
+    color: orangered;
+}
+/*Uses flexbox for layout in the card section, centering children horizontally.*/
+.card{
+    display: flex;
+    justify-content: center;
+}
+/*Sets dimensions, background color, and horizontal margins for elements with the class trend within the card section.*/
+.card .trend{
+    width: 280px;
+    background-color: white;
+    margin-inline: 22px;
+}
+/*Sets the dimensions of images within trend.*/
+.trend img{
+    width: 100%;
+    height: 64%;
+}
+/*Adds padding to elements with the class cardText within trend.*/
+.trend .cardText{
+    padding: 10px;
+}
+/*Sets the color and font size of i elements within trend.*/
+.trend i{
+    color: rgb(255, 149, 0);
+    font-size: 22px;
+}
+/*Styles buttons within trend, setting dimensions, background color, font size, rounded corners, border, left margin, and text color.*/
+.trend button{
+    width: 90px;
+    height: 28px;
+    background: orangered;
+    font-size: 12px;
+    border-radius: 22px;
+    border: none;
+    margin-left: 33px;
+    color: white;
+
+}
+/*Adds hover effect to trend elements within the card section, changing border, 
+background color, text color, cursor, and adding a transition.*/
+
+.card .trend:hover{
+     border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    transition: 0.6s ease;
+
+}
+/*Uses flexbox for layout in the blog section, centering children horizontally.*/
+.blog{
+    display: flex;
+    justify-content: center;
+}
+/*Uses flexbox for layout in blogCard, sets background color, padding, horizontal margins, and width.*/
+.blogCard{
+    display: flex;
+    background-color: white;
+    padding: 12px;
+    margin-inline: 22px;
+    width: 500px;
+}
+/*Adds hover effect to blogCard, changing border, background color, text color, cursor, and adding a transition.*/
+.blogCard:hover{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    transition: 0.6s ease;
+
+}
+/*Sets dimensions and rounded corners for images within blogCard.*/
+.blogCard img{
+    width: 44%;
+    border-radius: 11px;
+}
+/* Centers text and adds padding to elements with the class blogText within blogCard.*/
+
+.blogCard .blogText{
+    text-align: center;
+    padding: 20px;
+}
+/*Styles anchor tags within blogText, setting dimensions, padding, background color, text color, 
+font size, border, rounded corners, and removing underline.*/
+.blogText a{
+    width: 90px;
+    padding: 7px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Uses flexbox for layout in the customer section, centering children horizontally.*/
+.customer{
+    display: flex;
+    justify-content: center;
+}
+/*Sets dimensions, background color, padding, and horizontal margins for elements with the class review within the customer section.*/
+
+.customer .review{
+    width: 280px;
+    background-color: white;
+    padding: 24px;
+    margin-inline: 23px;
+}
+/*Sets dimensions and rounded corners for images within review, making them circular.*/
+
+.review img{
+    width: 44%;
+    border-radius: 50%;
+}
+/*Sets the color and font size of i elements within review.*/
+.review i{
+    color: rgb(255, 149, 0);
+    font-size: 22px;
+}
+
+/*Adds a border, centers text, adds padding, sets width, and left margin for the contact page.*/
+.contactPage{
+    border: 4px solid orangered;
+    text-align: center;
+    padding: 44px;
+    width: 500px;
+    margin-left: 26%;
+}
+/*Styles input fields within the contact page, setting dimensions, padding, font size, removing outline, and adding top margin.*/
+.contactPage input{
+    width: 400px;
+    padding: 9px;
+    font-size: 18px;
+    outline: none;
+    margin-top: 11px;
+}
+/*Styles buttons within the contact page, setting dimensions, background color, text color, font size, border, and top margin.
+css
+*/
+.contactPage button{
+    width: 140px;
+    height: 37px;
+    background-color: orangered;
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+}
+/*Adds hover effect to buttons within the contact page, changing border, background color, text color, cursor, and adding a transition.*/
+.contactPage button:hover{
+
+     border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+/*Uses flexbox for layout in the footer, evenly spacing children, sets background color, text color, padding, and top margin.*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: orangered;
+    color: white;
+    padding: 55px;
+    margin-top: 55px;
+}
+/* Hides the login page by default, sets dimensions, padding, background color,
+ centers text, positions it absolutely, and sets top and left margins.*/
+/*  Login */
+.loginPage{
+    display: none;
+    width: 190px;
+    padding: 22px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    margin-left: 81%;
+    top: 13%;
+}
+
+/* Styles input fields within the login page, setting dimensions, padding, border, and top margin.*/
+.loginPage input{
+    width: 166px;
+    padding: 4px;
+    border: 2px solid orangered;
+    margin-top: 11px;
+}
+
+/* Styles buttons within the login page, setting top margin, dimensions, border, font size, text color, and background color.*/
+.loginPage button{
+    margin-top: 13px;
+    width: 80px;
+    height: 28px;
+    border: none;
+    font-size: 18px;
+    color: wheat;
+    background-color: orangered;
+}
+/*Uses flexbox for layout in the icons section, setting direction to column, adding top margin, and spacing children evenly.*/
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+/*Sets the color and font size of anchor tags within the icons section.*/
+.icons a{
+    color: white;
+    font-size: 30px;
+}
+/*Defines styles for screens smaller than 600px, making navigation elements stack vertically, adjusting widths, margins, 
+and alignments for various sections to ensure better usability on small screens.*/
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    nav ul a {
+        margin-inline: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav input, nav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .banner {
+        margin-top: 60px;
+    }
+
+    .banner ul img {
+        height: auto;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .mainText {
+        text-align: center;
+    }
+
+    .main img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .trend {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogCard {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .customer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer .review {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .contactPage {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .text {
+        margin-bottom: 20px;
+    }
+
+    .loginPage {
+        width: 90%;
+        margin: 0;
+        top: 15%;
+    }
+}
+/*Defines styles for screens between 601px and 1024px, adjusting the layout and alignments 
+to ensure better usability on medium-sized screens (tablets).*/
+
+/* Styles for Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul a {
+        margin-inline: 10px;
+    }
+
+    .banner ul img {
+        height: auto;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .mainText {
+        text-align: center;
+    }
+
+    .main img {
+        width: 80%;
+        margin: 0;
+    }
+
+    .card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card .trend {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .blog {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .blogCard {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .customer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .customer .review {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .contactPage {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .text {
+        width: 45%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .loginPage {
+        width: 50%;
+        margin: 0;
+        top: 10%;
+    }
+}

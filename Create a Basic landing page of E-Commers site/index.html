@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage, displayed in the browser tab.-->
+    <title>E-Commerce Site</title>
+    <!--Links to the Google Fonts library to use the "Roboto" font family.-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Links to an external CSS file named style.css.-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links to the Font Awesome library for icons.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!--A container for all content.-->
+    <div class="container">
+        <nav>
+            <!--Displays the logo or title of the site.-->
+            <div class="logo">
+                <h1>Shopping Cart</h1>
+            </div>
+            <!--Unordered list containing navigation links and a search bar.-->
+            <ul>
+                <a  href="">Home</a>
+                <a id="cloths" href="#cloth">Cloths</a>
+                <a id="blogs" href="#blog">Blogs</a>
+                <a id="reviews" href="#review">Review</a>
+                <a id="contacts" href="#contact">Contact Us</a>
+                <a  id="electronics" href="#electronics">Electronics</a>
+                
+                <input type="text" placeholder="Search Here.."><i class="fa-solid fa-magnifying-glass"></i>
+                <button id="login">Log In</button>
+            </ul> 
+        </nav>
+        <!--: A section for the banner with navigation arrows. Contains img elements for banner images.-->
+        <div class="banner">
+            <a href="#" class="control_prev"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="#" class="control_next"><i class="fa-solid fa-arrow-right"></i></a>
+            <ul>
+            <img src="https://img.freepik.com/free-photo/front-view-woman-with-shopping-bag-concept_23-2148674158.jpg?w=1060&t=st=1721048307~exp=1721048907~hmac=489c40b13027e5bd4712ff5b467ba93435bf562f177f95531515d6772b02949e" alt="">
+            <img src="https://img.freepik.com/free-vector/flat-design-shopping-center-twitch-banner_23-2149337409.jpg?w=1060&t=st=1721048428~exp=1721049028~hmac=782a5c972cabccb30804e8681eae4f82d95dd654420a0e663ecdc63e9ba87965" alt="">
+            <img src="https://img.freepik.com/premium-photo/online-fashion-shopping-with-computer_23-2150400628.jpg?w=826" alt="">
+            <img src="https://img.freepik.com/premium-vector/flat-illustration-online-shopping-store_115083-334.jpg?size=626&ext=jpg&ga=GA1.1.1769140348.1720610187&semt=ais_user" alt="">
+                </ul>
+        </div>
+
+        <!--  Login Page -->
+        <!--A login section with input fields for email and password, and a login button.-->
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="password" placeholder="Enter Passowrd" id="pass">
+            <button id="loged">Log In</button>
+        </div>
+
+        <!--Hero Section-->
+        <!--Main hero section with a promotional message and an image-->
+        <div class="main">
+            <div class="mainText">
+                <h1>Great Deals Exciting Offers</h1>
+                <h2>Save Upto 30% off</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Quidem quis id incidunt maxime nostrum deleniti a minus<br> dignissimos, explicabo nulla aut voluptatem nobis nisi. <br>Magni eaque minima possimus inventore maxime?
+                </p>
+                <button>Explore</button>
+            </div>
+            <img src="/Images/main.png" alt="">
+        </div>
+
+            <!--A section for electronics products with individual product cards.-->
+         <div class="electronics" id="electronics">
+            <div class="head">
+                <h1>Electronics</h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="https://m.media-amazon.com/images/I/61AHiYyu3ZL._AC_UL480_QL65_.jpg" alt="">
+                    <div class="cardText">
+                        <p>Fire-Boltt Ninja Call Pro Plus 1.83"</p> 
+                        <h2>$16 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="https://m.media-amazon.com/images/I/51Q8DUDT2eL._AC_UL480_QL65_.jpg" alt="">
+                    <div class="cardText">
+                        <p>JBL Wired In Ear Headphones</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="https://m.media-amazon.com/images/I/71-Fx3Vfq5L._AC_UL480_QL65_.jpg" alt="">
+                    <div class="cardText">
+                        <p>ASUS Intel Core i5(16GB RAM/512GB SSD/4GB )</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cloths-->
+        <!--A section for clothing products with individual product cards.-->
+        <div class="cloth" id="cloth">
+            <div class="head">
+                <h1>Trending Women <span>T-Shirts</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="Images/g1.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="Images/g4.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="Images/g3.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="cloth">
+            <div class="head">
+                <h1>Trending Men <span>T-Shirts</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="Images/M1.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="Images/M2.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+                 <div class="trend">
+                    <img src="Images/M3.webp" alt="">
+                    <div class="cardText">
+                        <p>Trending T-Shirts</p> 
+                        <h2>$10 Only</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--A section for blog posts with individual blog cards.-->
+        <div class="read" id="blog">
+            <div class="head">
+                <h1>Read <span>Blog's</span></h1>
+            </div>
+
+            <div class="blog">
+                <div class="blogCard">
+                    <img src="Images/trend1.webp" alt="">
+                    <div class="blogText">
+                        <h2>Girls Trending Tops</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, id?</p>
+                        <a href="https://www.cottontraders.com/women/" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blogCard">
+                    <img src="Images/trend2.webp" alt="">
+                    <div class="blogText">
+                        <h2>Men's Trending Tops</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, id?</p>
+                        <a href="https://www.cottontraders.com/men/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Review-->
+        <!-- A section for customer reviews with individual review cards.-->
+        <div class="review" id="review">
+            <div class="head">
+                <h1>Customer <span>Review</span></h1>
+                <div class="customer">
+                    <div class="review">
+                        <img src="Images/r1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review">
+                        <img src="Images/r2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review">
+                        <img src="Images/r3.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact-->
+        <!--A div element that defines a section for contact information. The id attribute sets the section identifier to "contact".-->
+        <div class="contact" id="contact">
+        <div class="head">
+            <h1>Contact <span>Us</span></h1>
+        </div>
+        <div class="contactPage">
+            <input type="text" placeholder="Enter Your Name" id="name"><br>
+            <input type="password" placeholder="Enter Your password" id="pass"><br>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div class="footer" id="footer">
+        <div class="text">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+                 Saepe nostrum eaque facilis iste similique, provident placeat<br> voluptatem ab molestiae facere.</p>
+           
+        </div>
+         <div class="text">
+            <h2>Product</h2>
+            <p>our Design</p>
+            <p>Theme</p>
+            <p>Quality</p>
+            <p>Best Price</p>
+            
+        </div>
+         <div class="text">
+            <h2>Quality</h2>
+            <p>Customer</p>
+            <p>Review</p>
+            <p>Offer</p>
+            <p>Privacy Policy</p>
+           
+        </div>
+         <div class="text">
+            <h2>Adress</h2>
+            <p>4th Floore Gate</p>
+            <p>Abar Bazar</p>
+            <p>Bangolore</p>
+            
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://api.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
