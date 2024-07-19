@@ -1,0 +1,180 @@
+/* *: Selects all elements on the page.
+margin: 0; padding: 0;: Resets margin and padding to 0 for all elements.
+box-sizing: border-box;: Ensures that padding and border are included in the element's total width and height*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Sets the height of both the html and body elements to 100% of the viewport height (100vh), ensuring that the background gradient fills the entire viewport. */
+html,body{
+    height: 100%;
+}
+/* Sets the background of the body to a linear gradient with two colors (rgb(254,180,91) and rgba(223,68,197,1)), transitioning from a light orange to a pinkish-purple gradient horizontally (90deg).*/
+body{
+    background: rgb(254,180,91);
+    background: linear-gradient(90deg, rgba(254,180,91,1) 0%, rgba(223,68,197,1) 100%);
+}
+
+/* Styles the .container class:
+Uses flexbox (display: flex;) to center its content vertically and horizontally (align-items: center; justify-content: center;).
+Sets the height to 100% of the viewport height (height: 100%;).
+Applies an animation (move) to the container:
+animation-name: Specifies the name of the animation (move).
+animation-duration: Sets the duration of the animation to 2 seconds.
+animation-delay: Delays the start of the animation by 1 second.
+animation-iteration-count: Makes the animation repeat infinitely.*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+/* Defines an animation (move) using @keyframes:
+from: Specifies the starting point of the animation:
+left: 0;: Moves the container from the left edge of its containing element.
+background-color: greenyellow;: Sets the background color to greenyellow at the start.
+to: Specifies the ending point of the animation:
+left: 60%;: Moves the container 60% to the right of its containing element.
+background-color: goldenrod;: Changes the background color to goldenrod at the end.*/
+@keyframes move {
+    from{
+        left: 0;
+        background-color: greenyellow;
+    }
+    to{
+        left: 60%;
+        background-color: goldenrod;
+    }
+    
+}
+/*Styles the .card-body class:
+Sets the background color to white (#fff).
+Adds padding of 25px around the content.
+Rounds the corners with a border radius of 10px.
+Centers the text horizontally within the .card-body.*/
+.card-body{
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+/*Styles the <h1> element within .card-body:
+Adds 15px margin below the <h1> element.
+Sets the font size to 70px for a large heading.*/
+.card-body h1{
+    margin-bottom: 15px;
+    font-size: 70px;
+}
+/*Styles all buttons inside .card-btn class:
+Rounds the corners with a border radius of 5px.
+Sets text color to black (#000).
+Adds padding (10px top and bottom, 35px left and right) inside the button.
+Removes default button border (border: 0;).
+Sets font size to 15px and makes the text bold (font-weight: bold;).
+Adds 5px margin on left and right sides of each button.
+Changes cursor to pointer when hovering over the button.
+Applies a smooth transition effect (transition: 0.5s;) when properties change (e.g., background color on hover).*/
+.card-btn button{
+    border-radius: 5px;
+    color: #000;
+    padding: 10px 35px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+/*Styles the #decrement button:
+Sets the background color to yellowgreen.
+Styles the #decrement button on hover:
+Changes the background color to a darker shade of green (rgb(72, 98, 19)).
+Sets text color to white (#fff).*/
+button#decrement{
+    background: yellowgreen;
+}
+button#decrement:hover{
+    background-color: rgb(72, 98, 19);
+    color: #fff;
+}
+/*Styles the #reset button:
+Sets the background color to a shade of red (rgb(214, 23, 71)).
+Styles the #reset button on hover:
+Changes the background color to a darker shade of red (rgb(179, 49, 105)).
+Sets text color to white (#fff).*/
+button#reset{
+    background: rgb(214, 23, 71);
+}
+button#reset:hover{
+    background-color: rgb(179, 49, 105);
+    color: #fff;
+}
+
+/*Styles the #increment button:
+Sets the background color to a shade of orange (rgb(244, 171, 12)).
+Styles the #increment button on hover:
+Changes the background color to a darker shade of orange (rgb(98, 73, 19)).
+Sets text color to white (#fff).
+*/
+button#increment{
+    background: rgb(244, 171, 12);
+}
+button#increment:hover{
+    background-color: rgb(98, 73, 19);
+    color: #fff;
+}
+
+/* For small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        animation: none; /* Remove animation on smaller screens for better performance */
+    }
+    .card-body h1 {
+        font-size: 40px;
+    }
+    .card-btn button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 10px 0; /* Add space between buttons vertically */
+    }
+}
+
+/* For medium devices (tablets, 600px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .card-body h1 {
+        font-size: 50px;
+    }
+    .card-btn button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* For large devices (desktops, 1024px and up) */
+@media screen and (min-width: 1025px) {
+    .card-body h1 {
+        font-size: 70px;
+    }
+    .card-btn button {
+        padding: 10px 35px;
+        font-size: 15px;
+    }
+}
+
+/* Additional media query for extra small devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+    .card-body h1 {
+        font-size: 35px;
+    }
+    .card-btn button {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+}
